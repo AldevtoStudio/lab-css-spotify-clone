@@ -1,8 +1,132 @@
-/*
-Colors:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+* {
+  font-family: 'Roboto';
+}
 
-*/
+body {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+
+/*#region  -- Classes --*/
+.row-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+/*#endregion*/
+
+/*#region  -- Header styles --*/
+header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 12px 1.5em;
+}
+
+header img {
+  height: 56px;
+  margin-right: auto;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+}
+
+/*#endregion*/
+
+/*#region  -- Landing section styles --*/
+#landing-section {
+  background-image: url('../images/landing.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  text-align: center;
+  padding: 8em 0;
+}
+
+#landing-section h1 {
+  font-size: 72px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#landing-section p {
+  font-size: 32px;
+  font-weight: lighter;
+}
+/*#endregion*/
+
+/*#region  -- Whats on Spotify section styles --*/
+#whats-on-section > h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  font-weight: 500;
+  text-decoration-color: #00b172;
+  margin-bottom: 3em;
+}
+
+#whats-on-section img {
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+}
+
+#whats-on-section h3 {
+  color: #00b172;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0.6em 0;
+  text-align: center;
+}
+
+#whats-on-section p {
+  text-align: center;
+  font-weight: 300;
+}
+
+#whats-on-section div {
+  justify-content: space-evenly;
+}
+/*#endregion*/
+
+/*#region  -- Features section styles --*/
+#features-section {
+  background-color: #00b172;
+  margin: 0 2em;
+  color: #fff;
+  font-weight: 300;
+  padding: 1em 3em;
+}
+
+#features-section h2 {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  text-decoration-color: #fff;
+}
+
+#features-section img {
+  width: 12em;
+}
+
+#features-section #spotify-img {
+  width: 6em;
+}
+
+@media (max-width: 960px) {
+  .row-wrapper {
+    flex-direction: column;
+  }
+}
+/*#endregion*/
